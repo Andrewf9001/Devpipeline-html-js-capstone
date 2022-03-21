@@ -1,0 +1,126 @@
+html {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  color: #fff;
+  background: linear-gradient(
+    169deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(88, 0, 255, 1) 52%,
+    rgba(233, 0, 255, 0.8743872549019608) 85%,
+    rgba(255, 198, 0, 0.9164040616246498) 99%
+  );
+  background-size: cover;
+}
+
+#root {
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+}
+
+/* SideBar Section */
+.sidebar-container {
+  height: 100%;
+  border-right: 2px solid #fff;
+}
+
+.sidebar-container .sidebar-header {
+  text-align: center;
+}
+
+.sidebar-container .sidebar-data-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebar-container .sidebar-data-wrapper .data-btn-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 85%;
+}
+
+.sidebar-container
+  .sidebar-data-wrapper
+  .data-btn-wrapper
+  .name-weight-wrapper {
+  display: flex;
+}
+
+.sidebar-container
+  .sidebar-data-wrapper
+  .data-btn-wrapper
+  .name-weight-wrapper
+  .weight {
+  padding-left: 8px;
+}
+
+.sidebar-container .sidebar-data-wrapper .data-btn-wrapper .btn-wrapper {
+  display: flex;
+  width: 30%;
+  justify-content: space-around;
+}
+
+.sidebar-container
+  .sidebar-data-wrapper
+  .data-btn-wrapper
+  .btn-wrapper
+  .add-one {
+  color: black;
+  background-color: #06ff00;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.sidebar-container
+  .sidebar-data-wrapper
+  .data-btn-wrapper
+  .btn-wrapper
+  .sub-one {
+  color: #fff;
+  background-color: #ff1700;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+/* Content Section */
+.content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.content-container .content-header h1 {
+  font-size: 6em;
+}
+
+.content-container .randomize-btn {
+  height: 50px;
+  width: 300px;
+}
+
+.content-container .randomize-btn button {
+  color: #fff;
+  background-color: #2d31fa;
+  border: 0.1em solid black;
+  border-radius: 3px;
+  height: 100%;
+  width: 100%;
+  font-size: 1.2em;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.content-container .randomize-btn button:hover {
+  box-shadow: 0px 0px 26px -3px #000000;
+}
